@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function InvestorOffice() {
   return (
     <div className="cinema-frame office-scene">

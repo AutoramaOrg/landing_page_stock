@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function ContractVisual({ tone }) {
   return (
     <div className={`contract-visual ${tone}`}>

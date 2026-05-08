@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Particles() {
   return (
     <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">

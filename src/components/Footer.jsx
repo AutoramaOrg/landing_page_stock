@@ -1,3 +1,4 @@
+import React from 'react';
 import { Disc3, Instagram, Twitter, Youtube } from 'lucide-react';
 
 const nav = ['O Jogo', 'Ações', 'Como Funciona', 'FAQ'];

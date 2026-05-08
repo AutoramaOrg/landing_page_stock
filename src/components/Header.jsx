@@ -1,3 +1,4 @@
+import React from 'react';
 import { ChevronsRight } from 'lucide-react';
 
 const links = [

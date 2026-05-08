@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function SectionTitle({ title }) {
   return (
     <div className="relative z-10 mx-auto flex max-w-7xl items-center justify-center gap-5 px-5 text-center">

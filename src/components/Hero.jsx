@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { BarChart3, ChevronsRight, ShieldCheck, WalletCards } from 'lucide-react';
 import FuturisticMeeting from './visuals/FuturisticMeeting.jsx';
@@ -10,21 +11,21 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section id="hero" className="section-shell hero-grid min-h-screen pt-36 lg:pt-28">
+    <section id="hero" className="section-shell hero-grid min-h-screen pt-44 lg:pt-28">
       <div className="speed-lines" aria-hidden="true" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_22%,rgba(0,168,255,.22),transparent_34%),radial-gradient(circle_at_16%_35%,rgba(255,30,30,.18),transparent_28%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,13,.96)_0%,rgba(5,7,13,.68)_38%,rgba(5,7,13,.2)_100%)]" />
 
       <motion.div
-        initial={{ opacity: 0, x: -34 }}
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 28 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
         className="relative z-10 max-w-2xl"
       >
         <p className="mb-4 font-rajdhani text-xl font-bold uppercase italic tracking-[.16em] text-racing-red drop-shadow-[0_0_16px_rgba(255,30,30,.65)]">
           Oferta inicial limitada
         </p>
-        <h1 className="font-bebas text-6xl uppercase leading-[.88] tracking-[.035em] text-white md:text-8xl xl:text-[8.5rem]">
+        <h1 className="font-bebas text-5xl uppercase leading-[.88] tracking-[.035em] text-white sm:text-6xl md:text-8xl xl:text-[8.5rem]">
           Compre ações
           <span className="block text-racing-red drop-shadow-[0_0_22px_rgba(255,30,30,.75)]">
             do Autorama Racing

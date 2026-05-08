@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Clock3, Gamepad2, RefreshCcw, Wallet } from 'lucide-react';
 import SectionTitle from './SectionTitle.jsx';

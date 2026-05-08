@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, TrendingUp, Users } from 'lucide-react';
 import RacersVisual from './visuals/RacersVisual.jsx';

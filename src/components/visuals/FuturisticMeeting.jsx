@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function FuturisticMeeting() {
   return (
     <div className="cinema-frame meeting-scene">

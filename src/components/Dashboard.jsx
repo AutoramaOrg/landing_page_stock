@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { MonitorUp, ShieldCheck, UsersRound } from 'lucide-react';
 import InvestorOffice from './visuals/InvestorOffice.jsx';

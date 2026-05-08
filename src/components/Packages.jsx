@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Check, ChevronsRight } from 'lucide-react';
 import SectionTitle from './SectionTitle.jsx';

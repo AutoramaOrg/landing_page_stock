@@ -1,3 +1,5 @@
+import React from 'react';
+
 const suits = ['red', 'blue', 'gold', 'white', 'green'];
 
 export default function RacersVisual() {
