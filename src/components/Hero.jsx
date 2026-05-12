@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BarChart3, ChevronsRight, ShieldCheck, WalletCards } from 'lucide-react';
-import FuturisticMeeting from './visuals/FuturisticMeeting.jsx';
 
 const stats = [
   { icon: WalletCards, label: 'Cada ação', value: 'R$ 3,25' },
@@ -11,7 +10,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section id="hero" className="section-shell hero-grid min-h-screen pt-44 lg:pt-28">
+    <section id="home" className="section-shell hero-grid min-h-screen pt-44 lg:pt-28">
       <div className="speed-lines" aria-hidden="true" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_22%,rgba(0,168,255,.22),transparent_34%),radial-gradient(circle_at_16%_35%,rgba(255,30,30,.18),transparent_28%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,13,.96)_0%,rgba(5,7,13,.68)_38%,rgba(5,7,13,.2)_100%)]" />
@@ -20,18 +19,18 @@ export default function Hero() {
         initial={{ opacity: 0, y: 28 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        className="relative z-10 max-w-2xl"
+        className="relative z-10 mx-auto max-w-2xl text-center lg:mx-0 lg:text-left"
       >
         <p className="mb-4 font-rajdhani text-xl font-bold uppercase italic tracking-[.16em] text-racing-red drop-shadow-[0_0_16px_rgba(255,30,30,.65)]">
           Oferta inicial limitada
         </p>
-        <h1 className="font-bebas text-5xl uppercase leading-[.88] tracking-[.035em] text-white sm:text-6xl md:text-8xl xl:text-[8.5rem]">
-          Compre ações
-          <span className="block text-racing-red drop-shadow-[0_0_22px_rgba(255,30,30,.75)]">
-            do Autorama Racing
+        <h1 className="font-bebas text-[2.65rem] uppercase leading-[.92] tracking-[.035em] text-white min-[380px]:text-5xl sm:text-6xl md:text-7xl xl:text-8xl">
+          <span className="block whitespace-nowrap">COMPRE AÇÕES</span>
+          <span className="block whitespace-nowrap text-racing-red drop-shadow-[0_0_22px_rgba(255,30,30,.75)]">
+            DO AUTORAMA RACING
           </span>
         </h1>
-        <p className="mt-6 max-w-xl font-rajdhani text-lg font-medium leading-relaxed text-white/[.78] md:text-xl">
+        <p className="mx-auto mt-6 max-w-xl font-rajdhani text-lg font-medium leading-relaxed text-white/[.78] md:text-xl lg:mx-0">
           Ganhe dividendos mensais, tenha possibilidade de revenda e ainda garanta acesso antecipado ao jogo.
         </p>
 
@@ -51,7 +50,7 @@ export default function Hero() {
           ))}
         </div>
 
-        <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+        <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
           <a href="#pacotes" className="red-button px-8 py-5 text-base">
             Quero comprar agora
             <ChevronsRight size={20} />
@@ -67,9 +66,15 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.94, x: 28 }}
         animate={{ opacity: 1, scale: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.1, ease: 'easeOut' }}
-        className="relative z-10"
+        className="relative z-10 flex w-full items-center justify-center"
       >
-        <FuturisticMeeting />
+        <div className="hero-image-frame">
+          <img
+            src="/assets/acoes.png"
+            alt="Reunião futurista de investidores com gráficos de rendimento de ações"
+            className="h-full w-full object-contain"
+          />
+        </div>
       </motion.div>
     </section>
   );

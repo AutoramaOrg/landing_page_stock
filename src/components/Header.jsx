@@ -12,18 +12,12 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-racing-blue/20 bg-racing-black/[.78] shadow-blueGlow backdrop-blur-xl">
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:px-8">
-        <a href="#hero" className="group flex items-center gap-3">
-          <span className="relative flex h-9 w-11 items-center justify-center overflow-hidden border-l-4 border-racing-red bg-racing-blue/10">
-            <span className="checkered absolute inset-0 opacity-90" />
-          </span>
-          <span className="leading-none">
-            <span className="block font-orbitron text-xl font-black uppercase tracking-[.08em] text-white md:text-2xl">
-              Autorama
-            </span>
-            <span className="block -mt-1 text-right font-rajdhani text-sm font-bold uppercase tracking-[.34em] text-white/[.85]">
-              Racing
-            </span>
-          </span>
+        <a href="#home" className="group flex items-center">
+          <img
+            src="/assets/autorama_white.png"
+            alt="Autorama Racing"
+            className="h-11 w-auto max-w-[180px] object-contain drop-shadow-[0_0_18px_rgba(0,168,255,.2)] transition duration-300 group-hover:drop-shadow-[0_0_22px_rgba(255,30,30,.42)] sm:h-12 md:h-14 md:max-w-[220px]"
+          />
         </a>
 
         <div className="hidden items-center gap-9 lg:flex">

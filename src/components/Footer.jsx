@@ -9,15 +9,16 @@ export default function Footer() {
     <footer className="relative z-10 border-t border-racing-blue/20 bg-black/60 px-5 py-12">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
         <div>
-          <div className="flex items-center gap-3">
-            <span className="relative flex h-9 w-11 overflow-hidden border-l-4 border-racing-red bg-racing-blue/10">
-              <span className="checkered absolute inset-0 opacity-90" />
-            </span>
-            <div className="font-orbitron text-lg font-black uppercase leading-none tracking-[.08em]">
-              Autorama
-              <span className="block text-right font-rajdhani text-xs tracking-[.32em]">Racing</span>
-            </div>
-          </div>
+          <a href="#home" className="inline-flex">
+            <img
+              src="/assets/autorama_white.png"
+              alt="Autorama Racing"
+              className="h-10 w-auto max-w-[170px] object-contain opacity-95"
+            />
+          </a>
+          <p className="mt-5 max-w-xs font-rajdhani text-sm font-semibold leading-relaxed text-white/[.56]">
+            © 2025 Autorama Racing. Todos os direitos reservados.
+          </p>
           <div className="mt-7 flex gap-4 text-white/[.72]">
             <Instagram size={20} />
             <Youtube size={20} />
@@ -48,7 +49,7 @@ function FooterColumn({ title, items }) {
       <ul className="mt-4 space-y-2">
         {items.map((item) => (
           <li key={item}>
-            <a href="#hero" className="font-rajdhani text-sm font-semibold text-white/[.52] transition hover:text-racing-blue">
+            <a href="#home" className="font-rajdhani text-sm font-semibold text-white/[.52] transition hover:text-racing-blue">
               {item}
             </a>
           </li>

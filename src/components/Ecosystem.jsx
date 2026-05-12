@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarDays, TrendingUp, Users } from 'lucide-react';
-import RacersVisual from './visuals/RacersVisual.jsx';
 
 const items = [
   { icon: Users, title: 'Comunidade', text: 'Um time apaixonado em constante evolução.' },
@@ -21,7 +20,13 @@ export default function Ecosystem() {
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.7 }}
         >
-          <RacersVisual />
+          <div className="ecosystem-image-frame">
+            <img
+              src="/assets/personagens.png"
+              alt="Personagens pilotos do ecossistema Autorama Racing"
+              className="h-full w-full object-contain"
+            />
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 30 }}
@@ -29,11 +34,17 @@ export default function Ecosystem() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7 }}
         >
-          <p className="font-rajdhani text-lg font-bold uppercase tracking-[.18em] text-white/70">Você investe em</p>
-          <h2 className="font-bebas text-6xl uppercase leading-[.88] tracking-[.05em] text-white md:text-7xl">
-            Um ecossistema
-            <span className="block text-racing-red drop-shadow-[0_0_18px_rgba(255,30,30,.8)]">vivo.</span>
-          </h2>
+          <div className="ecosystem-title-block">
+            <div className="flex items-center justify-center gap-4 lg:justify-start">
+              <span className="race-flag" aria-hidden="true" />
+              <p className="whitespace-nowrap font-bebas text-[2.35rem] uppercase leading-none tracking-[.07em] text-white drop-shadow-[0_0_18px_rgba(0,168,255,.22)] min-[420px]:text-5xl md:text-6xl">
+                VOCÊ INVESTE EM
+              </p>
+            </div>
+            <h2 className="mt-3 whitespace-nowrap font-bebas text-[2.55rem] uppercase leading-none tracking-[.055em] text-[#FF2B2B] drop-shadow-[0_0_22px_rgba(255,43,43,.78)] min-[420px]:text-5xl md:text-6xl">
+              UM ECOSSISTEMA VIVO
+            </h2>
+          </div>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {items.map(({ icon: Icon, title, text }) => (
               <article key={title} className="border-l border-racing-blue/30 pl-5">
